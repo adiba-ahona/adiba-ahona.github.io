@@ -1,263 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- --------- UNICONS ---------- -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-
-    <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-
-    <title>Portfolio | Adiba</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#070b12">
+    <title>Adiba Anbar Ahona | AI Engineer & Creative Developer</title>
+    <meta name="description" content="Portfolio of Adiba Anbar Ahona — an MSc Artificial Intelligence student building multi-agent systems, NLP, computer vision and thoughtful digital products.">
+    <link rel="canonical" href="https://adiba-ahona.github.io/">
+    <meta property="og:title" content="Adiba Anbar Ahona | AI Engineer & Creative Developer">
+    <meta property="og:description" content="Applied AI, intelligent interfaces and research built to be useful.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adiba-ahona.github.io/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23070b12'/%3E%3Cpath d='M9 29 20 9l11 20M14 23h12' fill='none' stroke='%23b9ff66' stroke-width='3'/%3E%3C/svg%3E">
+    <script>document.documentElement.classList.add('js')</script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <div class="container">
-    <!-- --------------- HEADER --------------- -->
-      <nav id="header">
-        <div class="nav-logo">
-            <p class="nav-name">Adiba</p>
-            <span>.</span>
-        </div>
-        <div class="nav-menu" id="myNavMenu">
-            <ul class="nav_menu_list">
-                <li class="nav_list">
-                    <a href="#home" class="nav-link active-link">Home</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#about" class="nav-link">About</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#projects" class="nav-link">Experience</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <div class="circle"></div>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-button">
-            <button class="btn"><a href ="https://drive.google.com/file/d/1tooHAU1_87waBno2bepVgo1pZo5VQnex/view?usp=sharing">View CV<i class="uil uil-file-alt"></i></a></button>
-        </div>
-        <div class="nav-menu-btn">
-            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-        </div>
-      </nav>
+    <a class="skip" href="#work">Skip to projects</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="noise" aria-hidden="true"></div>
 
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="Adiba — home">adiba<span>.</span></a>
+        <nav aria-label="Main navigation">
+            <a href="#work">Work</a><a href="#about">About</a><a href="#experience">Journey</a><a href="#insights">Insights</a>
+        </nav>
+        <a href="#contact" class="nav-contact">Let’s connect <span aria-hidden="true">↗</span></a>
+        <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    </header>
 
-    <!-- -------------- MAIN ---------------- -->
-    <main class="wrapper">
-       <!-- -------------- FEATURED BOX ---------------- -->
-       <section class="featured-box" id="home">
-          <div class="featured-text">
-            <div class="featured-text-card">
-                <span>Adiba Anbar Ahona</span>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-glow glow-one" aria-hidden="true"></div><div class="hero-glow glow-two" aria-hidden="true"></div>
+            <div class="hero-copy">
+                <p class="eyebrow reveal">AI ENGINEER · CREATIVE DEVELOPER · RESEARCHER</p>
+                <h1 class="hero-title"><span class="line">Intelligence,</span><span class="line">engineered for</span><span class="line accent-text">real people.</span></h1>
+                <p class="intro reveal">I’m Adiba — an MSc Artificial Intelligence student who turns models into useful, human-centred products across multi-agent systems, NLP and computer vision.</p>
+                <div class="actions reveal"><a class="button primary magnetic" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="button magnetic" href="Adiba_Ahona_AI_Resume.pdf" download>Download résumé <span aria-hidden="true">↗</span></a></div>
+                <div class="availability reveal"><i></i><span><strong>Open to AI/ML and software opportunities</strong><small>Kuala Lumpur · Remote, hybrid or onsite</small></span></div>
             </div>
-            <div class="featured-name">
-                <p>I'm <span class="typedText"></span></p>
-            </div>
-            <div class="featured-text-info">
-                <p>frontend developer & Graphic Designer with a passion for creating visually stunning
-                   and user-friendly websites.
-                </p>
-            </div>
-            <div class="featured-text-btn">
-                <button class="btn"><a href ="https://drive.google.com/file/d/1tooHAU1_87waBno2bepVgo1pZo5VQnex/view?usp=sharing">View CV<i class="uil uil-download-alt"></i></a></button>
-            </div>
-            <div class="social_icons">
-                <div class="icon"><a href = "https://www.linkedin.com/in/adiba-anbar-ahona/"><i class="uil uil-linkedin-alt"></i></a></div>
-                <div class="icon"><a href = "https://www.facebook.com/adibaanbar.ahona/"><i class="uil uil-facebook"></i></a></div>
-                <div class="icon"><a href = "https://github.com/adiba-ahona"><i class="uil uil-github-alt"></i></a></div>
-            </div>
-          </div>
-          <div class="featured-image">
-            <div class="image">
-                <img src="assets/images/avatar.JPG" alt="avatar">
-            </div>
-          </div>
-          <div class="scroll-icon-box">
-            <a href="#about" class="scroll-btn">
-                <i class="uil uil-mouse-alt"></i>
-                <p>Scroll Down</p>
-            </a>
-          </div>
 
-       </section>
-       <!-- -------------- ABOUT BOX ---------------- -->
-       <section class="section" id="about">
-          <div class="top-header">
-            <h1>About Me</h1>
-          </div>
-          <div class="row">
-            <div class="col">
-                <div class="about-info">
-                    <h3>Welcome To My Profile</h3>
-                    <p> As a recent graduate in Computer Science Engineering, I am seeking a challenging role in the field of software development where I can apply my skills in programming, problem-solving, and teamwork to contribute to the success of innovative projects.
-                        I am dedicated to using my technical expertise and versatility to effectively contribute to creative projects. 
-                        Moreover, I am eager to obtain practical experience in a fast-paced work environment and significantly influence your organization's goals.</p>
-                    <p>In addition, freelancing as a graphic designer, I thrive on transforming concepts into eye-catching designs, work on diverse projects, and having more flexibility in my schedule. With a passion for aesthetics and a keen eye for detail, I strive to create visuals that captivate and inspire. It's an exciting and rewarding path to explore! 🎨✨
-                    </p>
-                </div>
+            <div class="ai-stage reveal" aria-label="Interactive AI capability map">
+                <canvas id="neural-canvas" aria-hidden="true"></canvas>
+                <div class="orb" aria-hidden="true"><span></span><span></span><span></span><b>AI</b></div>
+                <div class="stage-label label-a"><i></i>NLP systems</div><div class="stage-label label-b"><i></i>Computer vision</div><div class="stage-label label-c"><i></i>Agentic workflows</div><div class="stage-label label-d"><i></i>Product thinking</div>
+                <div class="model-status"><span>SYSTEM STATUS</span><strong><i></i> learning in public</strong></div><p class="stage-hint">Move through the field</p>
             </div>
-            <div class="col">
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Frontend</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Bootstrap</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Backend</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>PHP</span>
-                        <span>JAVA</span>
-                        <span>Python</span>
-                        <span>C++</span>
-                        <span>Flask</span>
-                        <span>Golang</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Database</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>MySQL</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Miscellaneous</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>Microsoft Office (Word, PowerPoint, Excel)</span>
-                        <span>Adobe (Illustrator, Photoshop)</span>
-                        <span>Latex (Overleaf)</span>
-                        <span>Proteus, Arduino</span>
-                    </div>
-                </div>
+
+            <div class="hero-metrics reveal" aria-label="Portfolio highlights">
+                <div><strong data-count="7">7</strong><span>featured builds</span></div><div><strong data-count="5">5</strong><span>AI agents orchestrated</span></div><div><strong data-count="10000" data-suffix="+">10K+</strong><span>research samples</span></div><div><strong>3.74</strong><span>BSc CGPA / 4.00</span></div>
             </div>
-          </div>
-       </section>
+        </section>
 
-       <!-- -------------- PROJECT BOX ---------------- -->
+        <section id="work" class="section work-section">
+            <div class="section-heading reveal"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>Ideas that became<br><span>working systems.</span></h2></div><p>A selection of AI, research and interactive products — with the decisions, limits and learning kept visible.</p></div>
+            <div class="project-filter reveal" role="group" aria-label="Filter projects"><button class="active" type="button" data-filter="all" aria-pressed="true">All work</button><button type="button" data-filter="ai" aria-pressed="false">AI systems</button><button type="button" data-filter="research" aria-pressed="false">Research</button><button type="button" data-filter="web" aria-pressed="false">Interactive web</button></div>
+            <div id="project-list" class="project-grid"></div>
+        </section>
 
-       <section class="section" id="projects">
-          <div class="top-header">
-              <h1>Research Experience</h1>
-          </div>
-          <div class="project-container">
-            <div class="project-box">
-                <i class="uil uil-briefcase-alt"></i>
-                <h3>Completed</h3>
-                <label>10+ Academic Projects</label>
+        <section class="marquee" aria-label="Areas of expertise"><div><span>AGENTIC AI</span><i>✦</i><span>NATURAL LANGUAGE PROCESSING</span><i>✦</i><span>COMPUTER VISION</span><i>✦</i><span>INTELLIGENT INTERFACES</span><i>✦</i><span>RESPONSIBLE AI</span><i>✦</i><span>DEEP LEARNING</span><i>✦</i><span>COMPUTATIONAL OPTIMIZATION</span><i>✦</i><span>MACHINE LEARNING</span><i>✦</i></div></section>
+
+        <section id="about" class="section about">
+            <div class="about-lead reveal"><p class="eyebrow">02 / THE PERSON BEHIND THE WORK</p><h2>Curiosity with<br><span>an engineering habit.</span></h2><p class="big-copy">I care about the space where a technically sound model meets a genuinely useful experience.</p></div>
+            <div class="about-copy">
+                <p class="reveal">I’m completing an MSc in Artificial Intelligence at Asia Pacific University in Kuala Lumpur. Before moving deeper into AI, I built responsive web experiences at W3Engineers — a foundation that still shapes how I prototype, test and communicate technical systems.</p>
+                <p class="reveal">My recent work spans multi-agent analytics, retrieval-based assistants, object tracking, symbolic music generation and 3D web interaction. Across all of it, I try to be clear about what a system can do, where it stops and what evidence would make it stronger.</p>
+                <article class="research reveal"><div class="research-icon" aria-hidden="true"><span></span></div><div><span class="eyebrow">CURRENT RESEARCH DIRECTION</span><h3>Speech recognition that understands more accents.</h3><p>My MSc thesis explores fairness evaluation for open-source automatic speech recognition on Southeast Asian English, with LoRA-based accent adaptation planned as the next stage.</p><div><span class="tag">Speech AI</span><span class="tag">Fairness evaluation</span><span class="tag">LoRA adaptation</span></div></div></article>
             </div>
-            <div class="project-box">
-                <i class="uil uil-users-alt"></i>
-                <h3>Undergraduate Thesis</h3>
-                <label>Bang-lish Sentiment Analysis using Deep Learning</label>
+            <div class="skill-cloud reveal" aria-label="Skills and technologies"><span class="skill-title">MY TOOLKIT /</span><span>Python</span><span>PyTorch</span><span>scikit-learn</span><span>FastAPI</span><span>Flask</span><span>OpenCV</span><span>YOLO</span><span>Gemini API</span><span>ReactFlow</span><span>TypeScript</span><span>JavaScript</span><span>SQL</span><span>Git</span><span>Figma</span></div>
+        </section>
+
+        <section id="experience" class="section experience-section">
+            <div class="section-heading reveal"><div><p class="eyebrow">03 / EXPERIENCE & EDUCATION</p><h2>Learning by building.<br><span>Building to learn.</span></h2></div></div>
+            <div class="timeline">
+                <article class="reveal"><p class="when">AUG – SEP 2026</p><div><span class="role-index">01</span><h3>Artificial Intelligence Intern</h3><p class="organization">CodeAlpha · Remote</p><p>Developed applied AI projects across translation, FAQ retrieval, symbolic music generation, object detection and tracking, connecting model logic to usable interfaces.</p></div><span class="tag">Applied AI</span></article>
+                <article class="reveal"><p class="when">APR – SEP 2025</p><div><span class="role-index">02</span><h3>Junior Web Developer</h3><p class="organization">W3Engineers Ltd · Dhaka</p><p>Built responsive WordPress and static websites, translated Figma designs into reusable interfaces, and improved performance and cross-browser consistency.</p></div><span class="tag">Web development</span></article>
+                <article class="reveal"><p class="when">MAY 2024 – MAR 2025</p><div><span class="role-index">03</span><h3>Software Engineer Intern</h3><p class="organization">W3Engineers Ltd · Dhaka</p><p>Contributed to frontend delivery, manual QA and migration issue reporting, and collaborated in an internal AI-agent hackathon.</p></div><span class="tag">Software & QA</span></article>
             </div>
-            <div class="project-box">
-                <i class="uil uil-award"></i>
-                <h3>Activities</h3>
-                <label>BRAC University Art & Photography Society (BUAPS)
-                    Secretary, Marketing Department</label>
+            <div class="education reveal"><div><p class="eyebrow">DEC 2025 – DEC 2026 EXPECTED</p><h3>MSc Artificial Intelligence</h3><p>Asia Pacific University of Technology & Innovation · Kuala Lumpur</p></div><div><p class="eyebrow">JAN 2019 – MAR 2023</p><h3>BSc Computer Science & Engineering</h3><p>BRAC University · CGPA 3.74 / 4.00</p></div></div>
+        </section>
+
+        <section id="insights" class="section insights-section">
+            <div class="section-heading reveal"><div><p class="eyebrow">04 / THINKING IN PUBLIC</p><h2>Beyond the code.</h2></div><p>I document what I’m learning — from agent architecture to the responsible use of research tools.</p></div>
+            <div class="insight-grid">
+                <a class="insight-card featured reveal" href="https://www.linkedin.com/posts/adiba-anbar-ahona_ai-powered-multi-agent-business-intelligence-activity-7461066272450035713-TsXz" target="_blank" rel="noopener noreferrer"><div class="insight-visual" aria-hidden="true"><span>CSV</span><i></i><span>5 AI agents</span><i></i><span>Report</span></div><p class="eyebrow">BUILD NOTE · MULTI-AGENT SYSTEMS</p><h3>From static dashboards to an AI-powered business intelligence workflow.</h3><p>A technical look at coordinating five Gemini-powered agents for ingestion, analytics, forecasting, orchestration and executive PDF reporting.</p><span class="read-link">Read on LinkedIn ↗</span></a>
+                <a class="insight-card reveal" href="https://www.linkedin.com/pulse/introduction-ai-driven-research-tools-adiba-anbar-ahona-h8svc" target="_blank" rel="noopener noreferrer"><p class="eyebrow">ARTICLE · AI LITERACY</p><h3>Introduction to AI-driven research tools.</h3><p>A practical guide to using AI research assistants thoughtfully — understanding both the productivity gains and the risks around bias, privacy and source quality.</p><span class="read-link">Read the article ↗</span></a>
+                <a class="insight-card profile-card reveal" href="https://github.com/adiba-ahona" target="_blank" rel="noopener noreferrer"><div class="github-mark" aria-hidden="true">&lt;/&gt;</div><p class="eyebrow">OPEN SOURCE TRAIL</p><h3>Explore the repositories behind the work.</h3><p>See experiments, project history and source code across AI, web development, databases and undergraduate research.</p><span class="read-link">Visit GitHub ↗</span></a>
             </div>
-          </div>
-       </section>
+        </section>
 
-       <!-- -------------- CONTACT BOX ---------------- -->
-
-       <section class="section" id="contact">
-          <div class="top-header">
-            <h1>Get in touch</h1>
-            <span>Do you have a project in your mind, contact me here</span>
-          </div>
-          <div class="row">
-             <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: adiba.ahona.work@gmail.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: +8801850405400</p>
-                </div>
-             </div>
-             <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
-                    </div>
-                    <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i></button>
-                    </div>
-                </div>
-             </div>
-          </div>
-       </section>
-
+        <section id="contact" class="contact section">
+            <div class="contact-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+            <p class="eyebrow reveal">05 / LET’S MAKE SOMETHING MATTER</p><h2 class="reveal">Have a problem worth<br><span>thinking deeply about?</span></h2><p class="reveal">I’m looking for AI/ML and software opportunities where I can contribute with care, learn quickly and help ship useful systems.</p><a class="email reveal" href="mailto:adiba.ahona.work@gmail.com">adiba.ahona.work@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links reveal"><a href="https://www.linkedin.com/in/adiba-anbar-ahona/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/adiba-ahona" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="Adiba_Ahona_AI_Resume.pdf" download>Résumé ↓</a></div>
+        </section>
     </main>
 
-
-    <!-- --------------- FOOTER --------------- -->
-    <footer>
-        <div class="top-footer">
-            <p>Adiba Anbar Ahona</p>
-        </div>
-        <div class="middle-footer">
-            <ul class="footer-menu">
-                <li class="footer_menu_list">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#about">About</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#projects">Experience</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-social_icons">
-            <div class="icon"><a href = "https://www.linkedin.com/in/adiba-anbar-ahona/"><i class="uil uil-linkedin-alt"></i></a></div>
-            <div class="icon"><a href = "https://www.facebook.com/adibaanbar.ahona/"><i class="uil uil-facebook"></i></a></div>
-            <div class="icon"><a href = "https://github.com/adiba-ahona"><i class="uil uil-github-alt"></i></a></div>
-        </div>
-        <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Adiba Anbar Ahona</a> - All rights reserved</p>
-        </div>
-    </footer>
-
-    </div>
-
-
-
-
-    <!-- ----- TYPING JS Link ----- -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-       <!-- ----- SCROLL REVEAL JS Link----- -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- ----- MAIN JS ----- -->
-    <script src="assets/js/main.js"></script>
+    <footer><a class="brand" href="#home">adiba<span>.</span></a><p>Designed & built with curiosity · Kuala Lumpur, Malaysia</p><a href="#home">Back to top ↑</a></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="app.js" defer></script>
 </body>
 </html>
